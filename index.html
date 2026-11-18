@@ -1,0 +1,24 @@
+<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Clips FAHHntásticos · en vivo</title>
+<style>
+:root{--bg:#f6f4f2;--card:#fff;--fg:#1d1a1a;--mute:#6b6464;--line:#e4dfdc;--red:#e5262b}
+@media(prefers-color-scheme:dark){:root{--bg:#171414;--card:#221e1e;--fg:#f3eeee;--mute:#a79e9e;--line:#352f2f;--red:#ff4a4f}}
+body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 system-ui,sans-serif}
+main{max-width:640px;margin:0 auto;padding:20px 16px 40px;display:flex;flex-direction:column;gap:14px}
+h1{font:400 32px/1 Impact,sans-serif;color:var(--red);margin:0;letter-spacing:.03em}
+.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px}
+.c{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px 12px}
+.c span{display:block;font-size:12px;color:var(--mute)}.c b{font-size:26px;font-variant-numeric:tabular-nums}
+a{color:var(--red);font-weight:600;text-decoration:none}small{color:var(--mute)}
+</style>
+<main><h1>Clips FAHHntásticos</h1><small id="u">Cargando…</small><div class="g" id="g"></div><div id="s" style="display:flex;flex-direction:column;gap:8px"></div></main>
+<script>
+fetch('panel.json?'+Date.now()).then(r=>r.json()).then(d=>{
+ const t=(k,v)=>{const e=document.createElement('div');e.className='c';e.innerHTML='<span></span><b></b>';e.children[0].textContent=k;e.children[1].textContent=v.toLocaleString('es');return e};
+ const g=document.getElementById('g');g.append(t('Suscriptores',d.suscriptores),t('Vistas totales',d.vistas),t('Videos',d.videos));
+ const s=document.getElementById('s');
+ d.shorts.forEach(x=>{const e=document.createElement('div');e.className='c';const a=document.createElement('a');a.href='https://youtube.com/shorts/'+x.id;a.textContent=x.titulo;
+  const m=document.createElement('small');m.textContent=' '+x.vistas.toLocaleString('es')+' vistas · '+x.likes+' likes · '+x.comentarios+' comentarios';e.append(a,document.createElement('br'),m);s.append(e)});
+ document.getElementById('u').textContent='Actualizado '+new Date(d.actualizado).toLocaleString('es');
+}).catch(()=>document.getElementById('u').textContent='Aún no hay datos.');
+</script></html>
