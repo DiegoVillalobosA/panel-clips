@@ -23,8 +23,10 @@ ul{margin:0;padding-left:1.2em}li{margin:4px 0}.vacio{color:var(--mute)}
 <div class="g" id="kpi"></div>
 <h2>Publicados</h2><div id="shorts" style="display:flex;flex-direction:column;gap:8px"></div>
 <h2>Cola de análisis (VODs)</h2><div id="cola" style="display:flex;flex-direction:column;gap:6px"></div>
+<h2>En cola</h2><ul id="encola"></ul>
+<h2>Previews pendientes de OK</h2><div id="previews" class="vacio">Ninguna por ahora.</div>
 <h2>Espera el OK de Diego</h2><ul id="espera"></ul>
-<h2>Reglas ya decididas</h2><ul id="reglas"></ul>
+<h2>Decisiones por defecto</h2><ul id="reglas"></ul>
 <h2>Próximos pasos</h2><ul id="proximos"></ul>
 <h2>Hecho hasta ahora</h2><ul id="hecho"></ul>
 </main>
@@ -37,7 +39,7 @@ function spark(vals){const NS='http://www.w3.org/2000/svg',s=document.createElem
  const mx=Math.max(...vals),mn=Math.min(...vals),r=(mx-mn)||1,p=vals.map((v,i)=>(i*94/(vals.length-1)+1)+','+(30-(v-mn)*28/r)).join(' ');
  const l=document.createElementNS(NS,'polyline');l.setAttribute('points',p);l.setAttribute('fill','none');l.setAttribute('stroke','var(--red)');l.setAttribute('stroke-width','2');l.setAttribute('stroke-linejoin','round');s.append(l);return s}
 Promise.all([J('panel.json'),J('historial.json'),J('cola.json'),J('contenido.json')]).then(([p,h,cola,ct])=>{
- if(ct){$('t').textContent=ct.titulo;$('st').textContent=ct.subtitulo;li($('espera'),ct.espera);li($('reglas'),ct.reglas);li($('proximos'),ct.proximos);li($('hecho'),ct.hecho)}
+ if(ct){$('t').textContent=ct.titulo;$('st').textContent=ct.subtitulo;li($('espera'),ct.espera);li($('encola'),ct.en_cola);(ct.previews||[]).forEach((p,i)=>{if(!i)$('previews').textContent='';const e=document.createElement('div');e.className='c';e.textContent=p.streamer+' · '+p.titulo+' · '+p.nombre;$('previews').append(e)});li($('reglas'),ct.reglas);li($('proximos'),ct.proximos);li($('hecho'),ct.hecho)}
  if(!p){$('u').textContent='Aún no hay datos.';return}
  $('u').textContent='Actualizado '+new Date(p.actualizado).toLocaleString('es');
  const tot=k=>p.shorts.reduce((a,s)=>a+s[k],0),k=(a,b)=>{const e=document.createElement('div');e.className='c';const sp=document.createElement('span');sp.textContent=a;const bb=document.createElement('b');bb.textContent=b;e.append(sp,bb);return e};

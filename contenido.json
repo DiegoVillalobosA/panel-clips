@@ -1,31 +1,43 @@
 {
  "titulo": "Clips FAHHntásticos",
  "subtitulo": "Shorts de streamers y GTA 6, hechos con Claude. Panel en vivo.",
- "shorts": ["FHrw8XSPrDA", "jq_b7-tSSKs", "2VjRiH67ygk", "GxaJVDJp60k"],
+ "shorts": [
+  "FHrw8XSPrDA",
+  "jq_b7-tSSKs",
+  "2VjRiH67ygk",
+  "GxaJVDJp60k"
+ ],
  "canal": "UC8pSHR5ccHJT31LVpWXVeQg",
  "espera": [
-  "Permiso de Rubius para seguir publicando clips suyos (pendiente de pedir).",
-  "Releer la política de Rockstar sobre material de GTA 6 antes de publicar más.",
-  "Publicar cualquier clip nuevo: nada sale sin el OK final de Diego.",
-  "Crear las credenciales de Google para subir videos como privados por script (opcional)."
+  "Pegar el bloque de la cola nocturna (ya está probado y corriendo).",
+  "Crear la cuenta de Instagram con el Gmail alternativo y pasar el @.",
+  "Decir si los Shorts los sube Diego o se suben por script (pendiente de credenciales).",
+  "Permiso de Rubius y releer la política de Rockstar antes de publicar más GTA 6."
  ],
  "reglas": [
-  "3 clips por stream, de 20 a 45 s; 1-3 Shorts al día al empezar.",
-  "Contenido fuerte con sticker 🙈 y palabras fuertes tapadas en el audio con un sonido propio.",
-  "Máxima calidad del VOD (1440p60 con webcam apilada), nunca 720p.",
-  "Crédito al streamer en el título y descripción con enlace al VOD y minuto.",
-  "El título debe corresponder a lo que se ve y el clip debe llevar el remate que promete.",
-  "Sin spoilers, cinemáticas ni contenido explícito; solo sonidos propios."
+  "1-3 Shorts al día, de menos de 60 s; horario 13:00 México / 14:00 Perú.",
+  "Todo en Privado hasta el OK de Diego.",
+  "Solo sonidos meme de Diego; 3 clips por stream (hasta 5 si hay picos muy grandes).",
+  "Título corto con el streamer y un emoji; siempre citar al streamer.",
+  "Canal «No creado para niños».",
+  "Sticker 🙈 en contenido fuerte, palabras fuertes tapadas en el audio, máxima calidad del VOD (1440p60)."
  ],
  "proximos": [
-  "Elegir 3 momentos de cada VOD analizado (KaiCenat, IlloJuan, AuronPlay, TheGrefg, xQc) y preparar previews.",
-  "A las 48 h de cada publicación: revisar vistas y retención y ajustar títulos y ganchos.",
-  "Línea de datos curiosos, noticias e historias de GTA (cada dato con fuente verificada).",
-  "Subir por script como privado y revisar en Studio antes de hacer público."
+  "Miniaturas y previews de los clips nuevos.",
+  "GTA Datos será un proyecto aparte de Diego.",
+  "Retención por Short (necesita YouTube Analytics con su sesión).",
+  "Revisar cambios del programa de monetización antes del 31 ene 2027.",
+  "Subida por API en privado (pendiente de credenciales).",
+  "Panel actualizado cada hora."
  ],
  "hecho": [
   "4 Shorts publicados (Bigfoot, avión narco, «es mi abuela», Bigfoot parte 2).",
   "Detector de momentos, ranking, clips apilados con título, subtítulos y sonidos, 1440p60.",
   "Cola de análisis nocturna automática (22:30) y panel en vivo."
- ]
+ ],
+ "en_cola": [
+  "Funciones avanzadas de YouTube (en verificación).",
+  "Cola nocturna: KaiCenat, IlloJuan, AuronPlay, TheGrefg y xQc. Squeezie descartado: su VOD es solo para suscriptores."
+ ],
+ "previews": []
 }
