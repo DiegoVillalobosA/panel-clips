@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-19T00:00+00:00",
+ "actualizado": "2026-11-19T00:06+00:00",
  "cola": [
   {
    "estado": "hecho",
@@ -17,12 +17,12 @@
    "nota": "IlloJuan, GTA VI #1 (3h52m, es)"
   },
   {
-   "estado": "error",
+   "estado": "en curso",
    "id": "2932698524",
    "nota": "AuronPlay, GTA VI desde PS5 Pro (2h51m, es)"
   },
   {
-   "estado": "error",
+   "estado": "en curso",
    "id": "2932646051",
    "nota": "TheGrefg, primera vez en GTA 6 (3h26m, es)"
   },
