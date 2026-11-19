@@ -1,0 +1,35 @@
+{
+ "actualizado": "2026-11-19T00:00+00:00",
+ "cola": [
+  {
+   "estado": "hecho",
+   "id": "2932305259",
+   "nota": "KaiCenat, GTA 6 first time (9h54m, en)"
+  },
+  {
+   "estado": "error",
+   "id": "2932391486",
+   "nota": "Squeezie, GTA VI (7h52m, fr)"
+  },
+  {
+   "estado": "hecho",
+   "id": "2932595314",
+   "nota": "IlloJuan, GTA VI #1 (3h52m, es)"
+  },
+  {
+   "estado": "error",
+   "id": "2932698524",
+   "nota": "AuronPlay, GTA VI desde PS5 Pro (2h51m, es)"
+  },
+  {
+   "estado": "error",
+   "id": "2932646051",
+   "nota": "TheGrefg, primera vez en GTA 6 (3h26m, es)"
+  },
+  {
+   "estado": "hecho",
+   "id": "2932113307",
+   "nota": "xQc, GTA 6 (16h26m, en; ya había caché de una prueba anterior)"
+  }
+ ]
+}
