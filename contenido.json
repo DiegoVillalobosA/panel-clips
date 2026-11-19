@@ -10,11 +10,11 @@
  "canal": "UC8pSHR5ccHJT31LVpWXVeQg",
  "espera": [
   "Crear la cuenta de Instagram con el Gmail alternativo y pasar el @.",
-  "Decir si los Shorts siguientes los sube Diego a mano o por script (la autorización de subida por API ya está hecha; falta probarla con un clip).",
-  "Permiso de Rubius y releer la política de Rockstar antes de publicar más GTA 6."
+  "Decidir si Diego sube los Shorts o se suben por script (la autorización de YouTube ya está hecha; siempre en Privado).",
+  "Releer la política de Rockstar antes de publicar más GTA 6."
  ],
  "reglas": [
-  "1-3 Shorts al día, de menos de 60 s; horario 13:00 México / 14:00 Perú (propuesto por Diego).",
+  "1 Short al día, 2 en días de pico, de menos de 60 s; horario 13:00 México / 14:00 Perú (propuesto por Diego).",
   "Los clips nuevos se preparan en privado y se publican solo con el OK de Diego.",
   "Solo sonidos meme de Diego; 3 clips por stream (hasta 5 si hay picos muy grandes).",
   "Título corto con el streamer y un emoji; siempre citar al streamer.",
@@ -26,17 +26,18 @@
   "GTA Datos será un proyecto aparte de Diego.",
   "Retención por Short (necesita YouTube Analytics con su sesión).",
   "Revisar cambios del programa de monetización antes del 31 ene 2027.",
-  "Probar la subida por script en privado con un clip.",
+  "Subida por API en privado: probar con un clip.",
   "Comprobar esta noche que la cola corre sola a las 22:30."
  ],
  "hecho": [
   "4 Shorts publicados (Bigfoot, avión narco, «es mi abuela», Bigfoot parte 2).",
   "Detector de momentos, ranking, clips apilados con título, subtítulos y sonidos, 1440p60.",
-  "Cola de análisis automática programada a las 22:30 (probada con el arranque manual; falta ver una ejecución nocturna real) y panel en vivo cada hora."
+  "Cola de análisis nocturna programada (22:30; primera ejecución programada esta noche, probada ya a mano) y panel en vivo cada hora."
  ],
  "en_cola": [
   "Funciones avanzadas de YouTube (en verificación por otro hilo; sin confirmar).",
   "Análisis de VODs: AuronPlay y TheGrefg en curso; KaiCenat, IlloJuan y xQc ya analizados; Squeezie descartado (VOD solo para suscriptores)."
  ],
- "previews": []
+ "previews": [],
+ "notas_fecha": "Texto fijo revisado el 18 nov 2026. Cifras y estado de la cola: lectura automática (ver «Actualizado» arriba)."
 }
